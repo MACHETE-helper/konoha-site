@@ -15,7 +15,8 @@ body {
 .menu {
   position: fixed;
   left: 0; top: 0;
-  width: 7%;
+  width: 140px;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -49,7 +50,6 @@ body {
 
 .menu-list a:hover {
   transform: scale(1.1);
-
 }
 
 .menu-btn {
@@ -75,6 +75,7 @@ body {
 .title img {
   position: relative;
   top: 0;
+  max-width: 100%;
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -82,14 +83,15 @@ body {
 .create_line {
   position: absolute;
   width: 1920px;
-  height: 50px;
+  max-width: 100%;
+  height: 53px;
   background-color: lightpink;
   filter: saturate(70%);
 }
 
 .name_welc {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 2vw;
   text-align: center;
   font-family: CustomFont;
   margin: 3px;
@@ -100,11 +102,13 @@ body {
 }
 
 .main_content_left_center {
+  max-width: 100%;
   position: absolute;
   top: 35%;
   left: 25%;
 }
 .main_content_left_center img{
+  max-width: 100%;
   position: absolute;
   left: 400px;
   top: 0;
