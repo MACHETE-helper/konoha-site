@@ -121,7 +121,8 @@ STATIC_URL = 'static/'
 
 
 STATICFILES_DIRS = [
-    "/home/MACHETE/machete.pythonanywhere.com/konoha/static"
+    BASE_DIR / "static",
+    "/var/www/static/",
 ]
 
 # Default primary key field type
