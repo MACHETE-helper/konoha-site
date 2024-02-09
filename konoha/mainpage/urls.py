@@ -10,4 +10,4 @@ urlpatterns = [
     path('hokage', views.hokage, name='hokage'),
     path('teachers', views. teachers, name='teachers')
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL)
