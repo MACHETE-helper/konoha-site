@@ -119,8 +119,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = '/home/MACHETE/machete.pythonanywhere.com/konoha/static'
-
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/var/www/static/",
