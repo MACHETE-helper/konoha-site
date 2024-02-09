@@ -123,3 +123,12 @@ body {
   top: 0;
 
 }
+
+@media screen and (min-width: 340px) and (max-width: 430px) {
+    .create_line {
+        height: 30px; /* Высота для экранов шириной от 393 до 430 пикселей */
+    }
+    .name_welc {
+      font-size: 15px;
+    }
+}
