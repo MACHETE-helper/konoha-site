@@ -120,6 +120,7 @@ body {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
+  height: auto;
   left: 110%;
   top: 0;
 
@@ -127,7 +128,7 @@ body {
 
 @media screen and (min-width: 340px) and (max-width: 430px) {
     .create_line {
-        height: 25px; /* Высота для экранов шириной от 393 до 430 пикселей */
+      height: 25px; /* Высота для экранов шириной от 340 до 430 пикселей */
     }
     .name_welc {
       font-size: 15px;
@@ -137,8 +138,23 @@ body {
       position: absolute;
       max-width: 100%;
       max-height: 100%;
-      font-size: 0.9vw;
+      font-size: 3vw;
       top: 10vh;
-      left: 27vw;
-}
+      left: 0;
+    }
+
+    .main_content_left_center h1 {
+      max-height: 100%;
+      font-size: 5vw;
+    }
+
+    .main_content_left_center img{
+      position: absolute;
+      max-width: 95%;
+      max-height: 100%;
+      height: auto;
+      left: 105%;
+      top: 0;
+
+    }
 }
