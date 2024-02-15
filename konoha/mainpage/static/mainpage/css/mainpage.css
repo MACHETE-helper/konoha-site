@@ -153,24 +153,24 @@ body {
 .teachers_btn {
   position: absolute;
   display: inline-block;
-  padding: 2.7vh 7vw;
-  font-size: 16px;
+  padding: 1.5em 5.7em;
+  font-size: 0.9vw;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 3em;
   cursor: pointer;
   background-color: #3498db;
-  transition: background-color 0.3s;
+  transition: background-color 0.6s;
 }
 
 .teachers_btn a {
   color: black;
 }
 
-.teachers_btn:active {
-  background-color: #2980b9;
+.teachers_btn:hover {
+  background-color: lightpink;
 }
 
 /* Анимация появления кнопки */
