@@ -8,6 +8,11 @@ body {
     src: url('../fonts/Catread.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'MontFont';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
 .wrapper {
   position: relative;
   overflow-x: hidden;
@@ -83,9 +88,10 @@ body {
 
 .create_line {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   max-width: 100%;
-  max-height: 6%;
+  height: auto;
+  max-height: 4.3em;
   background-color: lightpink;
   filter: saturate(70%);
 }
@@ -94,37 +100,128 @@ body {
   font-weight: bold;
   font-size: 2vw;
   text-align: center;
-  font-family: CustomFont;
-  margin: 3px;
+  font-family: MontFont;
 }
-.kor{
-  margin-right: 30px;
-  margin-left: 30px;
+.name_welc kor{
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
-.main_content_left_center {
+.privet {
+  font-family: MontFont;
+  display: block;
+  margin-top: 2em;
+  margin-left: 12.8em;
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+
+.main_content_left_center1 {
+  font-family: MontFont;
   position: absolute;
   max-width: 100%;
   max-height: 100%;
   font-size: 0.9vw;
-  top: 35vh;
-  left: 25vw;
+  font-weight: 500;
+  top: 23em;
+  left: 23vw;
 }
 
-.main_content_left_center h1 {
-  max-height: 100%;
-  font-size: 2.1vw;
-}
-
-.main_content_left_center img{
+.main_content_left_center1 img{
   position: absolute;
+  width: calc(200px + (400 - 200) * ((100vw - 1000px) / (1920 - 1000)));
   max-width: 100%;
   max-height: 100%;
   height: auto;
-  left: 110%;
+  left: 34.5vw;
   top: 0;
 
 }
+
+.main_content_left_center2 {
+  font-family: MontFont;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 0.9vw;
+  font-weight: 500;
+  top: 45em;
+  left: 46vw;
+
+}
+
+.teachers_btn {
+  position: absolute;
+  display: inline-block;
+  padding: 2.7vh 7vw;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  transition: background-color 0.3s;
+}
+
+.teachers_btn a {
+  color: black;
+}
+
+.teachers_btn:active {
+  background-color: #2980b9;
+}
+
+/* Анимация появления кнопки */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Применение анимации к кнопке */
+.teachers_btn {
+  animation: fadeIn 1s ease-out;
+}
+
+.main_content_left_center2 img{
+  position: absolute;
+  width: calc(200px + (400 - 200) * ((100vw - 1000px) / (1920 - 1000)));
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  left: -23vw;
+  top: 0;
+
+}
+
+.main_content_left_center3 {
+  font-family: MontFont;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 0.9vw;
+  font-weight: 500;
+  top: 68em;
+  left: 23vw;
+}
+
+.main_content_left_center3 img{
+  position: absolute;
+  width: calc(200px + (400 - 200) * ((100vw - 1000px) / (1920 - 1000)));
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  left: 34.5vw;
+  top: 0;
+
+}
+
+
 
 @media screen and (min-width: 340px) and (max-width: 430px) {
     .create_line {
@@ -134,7 +231,7 @@ body {
       font-size: 15px;
     }
 
-    .main_content_left_center {
+    .main_content_left_center1 {
       position: absolute;
       max-width: 100%;
       max-height: 100%;
@@ -143,12 +240,7 @@ body {
       left: 0;
     }
 
-    .main_content_left_center h1 {
-      max-height: 100%;
-      font-size: 5vw;
-    }
-
-    .main_content_left_center img{
+    .main_content_left_center1 img{
       position: absolute;
       max-width: 95%;
       max-height: 100%;
@@ -157,4 +249,14 @@ body {
       top: 0;
 
     }
+
+    .privet {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      font-size: 3.3vw;
+      top: 8vh;
+      left: 6vw;
+    }
+
 }
