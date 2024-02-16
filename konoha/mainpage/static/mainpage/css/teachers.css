@@ -17,6 +17,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
 .menu {
   position: fixed;
   left: 0; top: 0;
@@ -96,8 +97,48 @@ body {
   filter: saturate(70%);
 }
 
+.teachers_welc {
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  font-family: MontFont;
+  animation: fadeIn 2s ease-out;
+}
+.teachers_welc kor{
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.teachers_rus {
+  font-family: MontFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  font-size: 1.8vw;
+  font-weight: 700;
+  animation: fadeIn 2s ease-out;
+}
+
+.teachers_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
 @media screen and (min-width: 340px) and (max-width: 430px) {
     .create_line {
         height: 30px; /* Высота для экранов шириной от 393 до 430 пикселей */
     }
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

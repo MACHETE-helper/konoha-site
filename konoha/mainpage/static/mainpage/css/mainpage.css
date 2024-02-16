@@ -186,16 +186,6 @@ body {
   background-color: lightpink;
 }
 
-/* Анимация появления кнопки */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* Применение анимации к кнопке */
 .teachers_btn {
   animation: fadeIn 1s ease-out;
@@ -337,4 +327,14 @@ body {
       font-weight: 700;
     }
 
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
