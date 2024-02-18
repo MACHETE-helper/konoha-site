@@ -120,11 +120,92 @@ body {
   animation: fadeIn 2s ease-out;
 }
 
-.teachers_info {
+.teachers_pics {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  font-family: MontFont;
+  animation: fadeIn 2s ease-out;
+}
 
+.teachers_pics img {
+  height: 300px;
+  width: 300px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-top: 3vw;
+}
+
+.teacher_name {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-weight: 550;
+  font-size: 1.8em;
+  color: black;
+  text-decoration: none;
+
+}
+
+.teacher_name_ana {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin-left: -1em;
+  justify-content: center;
+  text-align: center;
+  font-weight: 550;
+  font-size: 1.8em;
+  color: black;
+  text-decoration: none;
+
+}
+
+.teachers_pics a:hover {
+  color: black;
+}
+
+.teacher_position {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.55em;
+
+}
+
+.teacher_language {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 450;
+  font-size: 1.2em;
+
+}
+
+.teachers_txt {
+  display: none;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+  width: 480px;
+}
+
+.show {
+  display: block;
+  animation: fadeInDown 1s ease-out;
 }
 
 @media screen and (min-width: 340px) and (max-width: 430px) {
@@ -140,5 +221,27 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }

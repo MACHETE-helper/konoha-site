@@ -18,7 +18,25 @@
     <div class="teachers_rus">
         <span>Наши учителя</span>
     </div>
-    <div class="teachers_info">
-
+    <div class="teachers_pics">
+        <div class="ana_info">
+            <img src="{% static 'mainpage/img/nastya.jpg' %}" alt="Настя">
+            <a href="#" class="teacher_name_ana" onclick="showTextAna()">Анастасия</a>
+            <div class="teacher_position">Директор, Старший преподаватель</div>
+            <div class="teacher_language">Преподаватель корейского и японского языков</div>
+            <div class="teachers_txt" id="teachers_txt">Ваше превосходительство, её высочество, королева всех народов и покровительница рода людского, межгалактическая императрица всего сущего, генералиссимус адмирал генерал планеты земля, создательница вселенной, мегапрезидент хокаге деревни скрытой в листве</div>
+        </div>
+        <div class="masha_info">
+            <img src="{% static 'mainpage/img/masha.png' %}" alt="Маша">
+            <a href="#" class="teacher_name" onclick="showText()">Мария</a>
+            <div class="teacher_position">Младший-преподаватель</div>
+            <div class="teacher_language">Преподаватель корейского языка</div>
+        </div>
+        <div class="tanya_info">
+            <img src="{% static 'mainpage/img/tanya.png' %}" alt="Таня">
+            <a href="#" class="teacher_name" onclick="showText()">Татьяна</a>
+            <div class="teacher_position">Младший-преподаватель</div>
+            <div class="teacher_language">Преподаватель китайского языка</div>
+        </div>
     </div>
 {% endblock %}
